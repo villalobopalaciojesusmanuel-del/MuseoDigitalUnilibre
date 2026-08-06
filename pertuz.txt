@@ -1,3 +1,4 @@
 hola mundo, sale?
 si 
 sí, ya 
+ahora si ya entendi los comandos
