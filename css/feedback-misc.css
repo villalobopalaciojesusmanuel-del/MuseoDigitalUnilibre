@@ -1,0 +1,16 @@
+/* ---------- TOAST ---------- */
+#toast-root{position:fixed;bottom:26px;left:50%;transform:translateX(-50%);z-index:200;display:flex;flex-direction:column;gap:8px;align-items:center;}
+.toast{background:var(--black);color:#fff;padding:12px 20px;border-radius:999px;font-size:13.5px;font-weight:600;box-shadow:var(--shadow-lg);animation:toastIn .2s ease;display:flex;align-items:center;gap:8px;}
+.toast.levelup{background:linear-gradient(90deg,var(--red-700),var(--red-500));color:#fff;font-family:var(--font-display);}
+.toast.warn{background:var(--warn);}
+@keyframes toastIn{from{opacity:0;transform:translateY(10px);}to{opacity:1;transform:translateY(0);}}
+
+/* ---------- EMPTY ---------- */
+.empty-state{text-align:center;padding:50px 20px;color:var(--gray-600);}
+.empty-state .ic{font-size:36px;}
+
+/* ---------- MISC ---------- */
+.role-badge{font-size:10px;font-weight:700;padding:3px 9px;border-radius:999px;background:rgba(255,255,255,.2);text-transform:uppercase;letter-spacing:.04em;}
+.section-sub{font-size:13px;color:var(--gray-600);margin-top:4px;}
+.pill-row{display:flex;gap:8px;flex-wrap:wrap;margin-top:6px;}
+

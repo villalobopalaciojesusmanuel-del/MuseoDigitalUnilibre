@@ -1,0 +1,11 @@
+@media (max-width:860px){
+  .nav-links{overflow-x:auto;max-width:100%;-webkit-overflow-scrolling:touch;scrollbar-width:none;}
+  .nav-links::-webkit-scrollbar{display:none;}
+  .nav-link{flex-shrink:0;}
+  .hero-content{flex-direction:column;text-align:center;padding:22px 20px;}
+  .hero-illustration{display:none;}
+  .hero-text h1{font-size:24px;}
+  .form-row{grid-template-columns:1fr;}
+  .trow{grid-template-columns:1.6fr 1fr;grid-template-rows:auto auto;}
+  .trow.head{display:none;}
+}

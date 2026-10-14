@@ -1,0 +1,37 @@
+/* ---------- GRID / CARDS (estilo e-Libre: fondo rosado) ---------- */
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:16px;}
+.card{background:var(--red-50);border:1px solid var(--red-100);border-radius:var(--radius);overflow:hidden;transition:transform .18s ease,box-shadow .18s ease;cursor:pointer;animation:rise .35s ease both;display:flex;flex-direction:column;}
+.card:hover{transform:translateY(-4px);box-shadow:var(--shadow-lg);}
+@keyframes rise{from{opacity:0;transform:translateY(10px);}to{opacity:1;transform:translateY(0);}}
+.card-media{height:118px;margin:12px 12px 0;border-radius:10px;background:var(--white);border:1px solid var(--gray-200);display:flex;align-items:center;justify-content:center;font-size:34px;position:relative;color:var(--gray-800);}
+.card-cat{position:absolute;top:8px;left:8px;font-size:10px;font-weight:700;padding:3px 8px;border-radius:999px;text-transform:uppercase;letter-spacing:.03em;}
+.card-type{position:absolute;top:8px;right:8px;background:rgba(20,20,22,.75);color:#fff;font-size:10.5px;padding:3px 7px;border-radius:999px;}
+.card-body{padding:12px 14px 15px;flex:1;display:flex;flex-direction:column;gap:6px;}
+.card-title{font-family:var(--font-display);font-size:14.5px;font-weight:600;line-height:1.3;}
+.card-meta{font-family:var(--font-mono);font-size:10.5px;color:var(--gray-600);}
+.card-desc{font-size:12px;color:var(--gray-800);line-height:1.4;flex:1;}
+.card-foot{display:flex;justify-content:space-between;align-items:center;font-size:11.5px;color:var(--gray-600);margin-top:2px;}
+
+/* ---------- TIMELINE ---------- */
+.timeline-wrap{overflow-x:auto;overflow-y:hidden;padding:90px 10px 90px;}
+.timeline-track{position:relative;display:flex;align-items:center;min-width:max-content;gap:0;padding:0 30px;}
+.timeline-line{position:absolute;left:0;right:0;top:50%;height:3px;background:linear-gradient(90deg,var(--red-700),var(--red-400));z-index:0;}
+.timeline-node{position:relative;z-index:1;width:220px;display:flex;flex-direction:column;align-items:center;flex-shrink:0;}
+.timeline-node.up{justify-content:flex-end;transform:translateY(-70px);}
+.timeline-node.down{justify-content:flex-start;transform:translateY(70px);}
+.medal{width:20px;height:20px;border-radius:50%;background:var(--red-500);border:4px solid var(--white);box-shadow:0 0 0 3px var(--red-500);cursor:pointer;transition:.15s;}
+.medal:hover{transform:scale(1.25);}
+.tl-card{background:var(--white);border-radius:12px;padding:12px 14px;box-shadow:var(--shadow);width:200px;cursor:pointer;transition:.15s;margin:10px 0;}
+.tl-card:hover{box-shadow:var(--shadow-lg);transform:translateY(-2px);}
+.tl-year{font-family:var(--font-mono);font-weight:700;color:var(--red-500);font-size:12px;}
+.tl-title{font-family:var(--font-display);font-size:13.5px;margin-top:2px;font-weight:600;}
+
+/* ---------- MEDALLION (Hall de la Fama) ---------- */
+.medallion{width:92px;height:92px;border-radius:50%;padding:4px;background:conic-gradient(from 180deg,var(--red-500),var(--black),var(--red-700),var(--red-500));margin:0 auto;}
+.medallion-inner{width:100%;height:100%;border-radius:50%;background:var(--red-50);display:flex;align-items:center;justify-content:center;font-family:var(--font-display);font-weight:700;font-size:24px;color:var(--red-600);border:3px solid var(--white);}
+.hof-card{background:var(--white);border-radius:var(--radius);padding:22px 16px;text-align:center;box-shadow:var(--shadow);cursor:pointer;transition:.18s;animation:rise .35s ease both;}
+.hof-card:hover{transform:translateY(-4px);box-shadow:var(--shadow-lg);}
+.hof-name{font-family:var(--font-display);font-weight:600;margin-top:12px;font-size:15px;}
+.hof-role{font-size:12px;color:var(--gray-600);margin-top:2px;}
+.hof-year{display:inline-block;margin-top:8px;font-family:var(--font-mono);font-size:11px;background:var(--red-50);color:var(--red-600);padding:3px 10px;border-radius:999px;}
+

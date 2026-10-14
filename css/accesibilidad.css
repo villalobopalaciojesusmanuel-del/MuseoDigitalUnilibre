@@ -1,0 +1,11 @@
+/* ---------- HIGH CONTRAST MODE (RNF-04) ---------- */
+body.high-contrast{background:#000;color:#FFF206;}
+body.high-contrast .topnav,body.high-contrast .hero-card{background:#000 !important;border-bottom:2px solid #FFF206;}
+body.high-contrast .card,body.high-contrast .modal,body.high-contrast .stat-card,body.high-contrast .table-card,
+body.high-contrast .badge-chip,body.high-contrast .hof-card,body.high-contrast .dash-head,body.high-contrast .sidebar-card,
+body.high-contrast .login-wrap{background:#000 !important;color:#FFF206 !important;border:1.5px solid #FFF206 !important;box-shadow:none !important;}
+body.high-contrast .card-desc,body.high-contrast .card-meta,body.high-contrast .section-sub,body.high-contrast .modal-desc{color:#FFF206 !important;opacity:.9;}
+body.high-contrast .btn-primary,body.high-contrast .btn-crimson,body.high-contrast .btn-success{background:#FFF206 !important;color:#000 !important;}
+body.high-contrast .filter-btn,body.high-contrast .nav-link{color:#FFF206 !important;border-color:#FFF206 !important;}
+body.high-contrast .card-media{filter:grayscale(1) contrast(1.4);}
+

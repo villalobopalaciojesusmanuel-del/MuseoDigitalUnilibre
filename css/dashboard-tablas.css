@@ -1,0 +1,40 @@
+/* ---------- DASHBOARD ---------- */
+.dash-head{display:flex;align-items:center;gap:16px;background:var(--white);border-radius:var(--radius);padding:22px;box-shadow:var(--shadow);margin-bottom:22px;flex-wrap:wrap;}
+.avatar-lg{width:64px;height:64px;border-radius:50%;background:var(--red-600);color:#fff;display:flex;align-items:center;justify-content:center;font-family:var(--font-display);font-weight:700;font-size:22px;flex-shrink:0;}
+.stat-cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:14px;margin-bottom:24px;}
+.stat-card{background:var(--white);border-radius:14px;padding:18px;box-shadow:var(--shadow);}
+.stat-card .n{font-family:var(--font-display);font-size:26px;font-weight:700;}
+.stat-card .l{font-size:12px;color:var(--gray-600);margin-top:2px;}
+.progress-track{height:9px;background:var(--gray-200);border-radius:999px;margin-top:10px;overflow:hidden;}
+.progress-fill{height:100%;background:linear-gradient(90deg,var(--red-700),var(--red-500));border-radius:999px;transition:width .4s ease;}
+.badges-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:12px;}
+.badge-chip{background:var(--white);border-radius:14px;padding:16px 10px;text-align:center;box-shadow:var(--shadow);}
+.badge-chip.locked{opacity:.4;}
+.badge-chip .ic{font-size:24px;}
+.badge-chip b{display:block;font-size:12px;margin-top:6px;}
+.badge-chip span{font-size:10.5px;color:var(--gray-600);}
+
+/* ---------- RANKING ---------- */
+.rank-row{display:grid;grid-template-columns:44px 1fr auto;align-items:center;gap:12px;padding:12px 16px;border-bottom:1px solid var(--gray-100);}
+.rank-row:last-child{border-bottom:none;}
+.rank-row.me{background:var(--red-50);border-radius:10px;}
+.rank-pos{font-family:var(--font-display);font-weight:700;font-size:16px;color:var(--gray-600);text-align:center;}
+.rank-name{font-weight:600;font-size:13.5px;}
+.rank-pts{font-family:var(--font-mono);font-size:13px;color:var(--red-600);font-weight:700;}
+
+/* ---------- TABLE (docente/admin) ---------- */
+.table-card{background:var(--white);border-radius:var(--radius);box-shadow:var(--shadow);overflow:hidden;}
+.trow{display:grid;grid-template-columns:2.2fr 1fr 1fr 1fr auto;gap:12px;align-items:center;padding:14px 18px;border-bottom:1px solid var(--gray-100);font-size:13.5px;}
+.trow:last-child{border-bottom:none;}
+.trow.head{background:var(--gray-100);font-weight:700;font-size:11.5px;text-transform:uppercase;letter-spacing:.03em;color:var(--gray-600);}
+.trow:not(.head):hover{background:var(--gray-100);}
+.status-chip{font-size:11px;font-weight:700;padding:4px 10px;border-radius:999px;display:inline-block;text-align:center;}
+.status-pendiente{background:var(--warn-tint);color:var(--warn);}
+.status-aprobado{background:var(--success-tint);color:var(--success);}
+.status-devuelto{background:var(--danger-tint);color:var(--danger);}
+.bar-row{display:flex;align-items:center;gap:12px;margin-bottom:12px;}
+.bar-label{width:150px;font-size:12.5px;font-weight:600;flex-shrink:0;}
+.bar-track{flex:1;height:12px;background:var(--gray-100);border-radius:999px;overflow:hidden;}
+.bar-fill{height:100%;border-radius:999px;background:var(--red-500);}
+.bar-num{width:34px;text-align:right;font-family:var(--font-mono);font-size:12px;color:var(--gray-600);}
+
